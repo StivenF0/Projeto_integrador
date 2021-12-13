@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Arquivo CSS -->
+	<link rel="stylesheet" href="style/main.css">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="shortcut icon" href="img/cube_logo.png"/>
+	<title>Cubing</title>
+</head>
+
+<body style="background-color: lightgray;">
+
+	<!-- CABEÇALHO -->
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-nav">
+			<a class="navbar-brand" href="#">
+				<img src="img/cube_logo.png" width="40px" height="40px" alt="">
+			</a>
+			<a class="navbar-brand text-white" href="#">
+				<h4>Cubing</h4>
+			</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html"><strong style="color: white;">Home</strong> <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="about.html"><strong style="color: white;">Sobre</strong></a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+
+	<!-- CORPO -->
+	<section>
+		<div class="container-fluid">
+			<div class="content">
+				<main class="max">
+					<div class="row justificado">
+						<div class="card border-primary" style="width: 300px; height: 30rem;">
+							<img class="card-img-top" src="img/cards/cubo-magico.png" alt="Cubo Mágico" height="300" width="300">
+							<div class="card-body bg-gray">
+								<div class="card-title">
+									<h5>Cubo mágico</h3>
+								</div>
+								<p class="card-text" style="font-size: 15px">O cubo de Rubik é um quebra-cabeça
+									tridimensional, inventado pelo professor húngaro Ernõ Rubik em 1974.</p>
+							</div>
+						</div>
+						<div class="card border-primary" style="width: 300px; height: 30rem;">
+							<img class="card-img-top" src="img/cards/tutorial.png" alt="Tutorial" height="300" width="300">
+							<div class="card-body bg-gray">
+								<div class="card-title">
+									<h5>Tutorial - Cubo 3x3</h5>
+								</div>
+								<p class="card-text" style="font-size: 15px">Passo-a-passo para você aprender a resolver
+									o Cubo Mágico em poucos segundos, do nivél básico ao avançado.
+								</p>
+							</div>
+						</div>
+						<div class="card border-primary" style="width: 300px; height: 30rem;">
+							<img class="card-img-top" src="img/cards/curiosidades.png" alt="Curiosidades" height="300" width="300">
+							<div class="card-body bg-gray">
+								<div class="card-title">
+									<h5>Curiosidade</h5>
+								</div>
+								<p class="card-text" style="font-size: 15px;">O quebra-cabeça mais intrigante da história, com 43 quintilhões 
+									de possibilidades e mais de 1 bilhão de unidades vendidas.
+								</p>
+							</div>
+						</div>
+					</div>
+				</main>
+			</div>
+		</div>
+	</section>
+	<br><br>
+	<section>
+
+		<div id="accordion" style="margin-bottom: 40px;width: 100%;">
+
+
+			<div class="card border-danger">
+				<div class="card-header" id="headingOne">
+				  <h5 class="mb-0">
+					<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+					   <h4 class="accd">Tutorial do cubo</h4>
+					</button>
+				  </h5>
+				</div>
+				<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+					<div class="card-body bg-gray">
+					  	<div class="container-fluid">
+						  	<div class="content">
+								<h5>1º Passo - Cruz inicial</h5>
+								<p>Um dos métodos mais básicos de se resolver o cubo mágico é a partir de camadas, simplificando, o máximo possível, o método de resolução.</p>
+								<p>Para começar a resolução do cubo, faz-se uma cruz em qualquer lado do cubo <strong>(nessa explicação, o lado branco será utilizado como principal)</strong>, tentando ao máximo conectar o centro escolhido com os adjacentes.</p>
+								<img src="img/cubeTutorial/cube-white-cross.png" alt="cube_white_cross">
+								<hr>
+								<h5>2º Passo - Primeira camada</h5>
+								<p>Agora, virando o cubo com a face da cruz para baixo, recomenda-se que realize a resolução da primeira camada ligando as pontas para o seu respectivo lugar.</p>
+								<p>Uma boa estratégia seria buscar uma ponta que tivesse a cor branca na parte de cima do cubo e colocar ela acima do lugar onde ela se encaixa. E fazer o movimento R U R’ U’ até ela se encaixar no seu lugar. Por exemplo:</p>
+								<ul>
+									<li>A pessoa tem uma peça de canto com as cores: azul, branco e vermelho.</li>
+									<li>A pessoa coloca a peça acima do lugar onde ela deve ir (entre os centro azul e vermelho).</li>
+									<li>A pessoa faz o movimento R U R’ U’ repetidas vezes até ela se encaixar no lugar.</li>
+									<li>E repete o processo para os demais cantos.</li>
+									<li>Resolvendo assim a primeira camada.</li>
+								</ul>
+								<h5>Observações:</h5>
+								<ul>
+									<li>As Letras que representam algoritmos, estão explicadas na aba de notações.</li>
+									<li>Caso não haja peças com coloração branca na camada de cima, deverá usar o movimento R U R’ U’ para retirar uma peça branca fora do lugar e reposiciona-la no lugar correto.</li>
+								</ul>
+								<img src="img/cubeTutorial/cube-first-layer.png" alt="cube_first_layer">
+								<hr>
+								<h5>3º Passo - Segunda camada</h5>
+								<p>Na resolução da segunda camada, as peças importantes a se conectar são as arestas. Para começar, temos que procurar as arestas que não tenham a cor amarela e alinhá-la a seu respectivo centro.</p>
+								<p>Para encaixá-la na aresta da direita é só executar o algoritmo: U R U R’ U’ y L’ U’ L U.</p>
+								<p>Já para encaixá-la na aresta da esquerda o algoritmo é o mesmo só que com a esquerda: U’ L’ U L y’ R U R’ U’.</p>
+								<img src="img/cubeTutorial/cube-second-layer.png" alt="cube_second_layer">
+								<hr>
+								<h5>4º Passo - Cruz amarela</h5>
+								<p>Após a resolução da segunda camada, a terceira é o que falta para o término do cubo. Uma estratégia muito utilizada nessas horas é fazer a cruz amarela. No pior dos casos, logo após ter resolvido a segunda camada, a pessoa encontrar somente centro amarelo na face superior do cubo.</p>
+								<p>Nesse caso, a sequência “F R U R’ U’ F’”, que é muito usada, pode ser a solução para encontrar um dos formatos favoráveis para continuação da resolução. Os formatos que podem ser encontrados com esse algoritmo são: “L” amarelo, linha amarela ou a cruz.</p>
+								<ul>
+									<li>Caso encontrado o “L” amarelo, com o cubo visto de cima, posicione de modo que as arestas do L fiquem posicionadas para a esquerda e para cima. Após isso, olhando novamente o cubo de frente, basta executar o algoritmo já citado anteriormente.</li>
+									<li>Caso encontrado a linha amarela, com o cubo visto de cima, posicione de modo que a linha fique horizontal em relação a frente. E olhando novamente de frente, o algoritmo citado é utilizado para a formação da cruz.</li>
+									<li>Quando a cruz é formada, podemos passar para o próximo passo.</li>
+								</ul>
+						  	</div>
+						  	<div class="row justificado justify-content-center">
+							  	<div class="col-4 my-auto">
+								  	<img src="img/cubeTutorial/cube-yellow-LShape.png" alt="L-shape">
+							  	</div>
+							  	<div class="col-4 my-auto">
+								  	<img src="img/cubeTutorial/cube-yellow-horizontal-line.png" alt="H-Line">
+							  	</div>
+							  	<div class="col-4 my-auto">
+								  	<img src="img/cubeTutorial/cube-yellow-cross.png" alt="yellow-cross">
+							  	</div>
+						  	</div>
+						  	<div class="content">
+								<hr>
+								<h5>5º Passo - Cruz amarela ligada</h5>
+								<p>Com a cruz formada, agora é preciso ligar as arestas da cruz com os outros centros do cubo. Quando chegar nesse passo, tente alinhar o máximo de arestas que conseguir, dentre os casos que podem ocorrer, duas ou quatro arestas conseguirão estar em seu devido lugar. Um algoritmo importante que vai ajudar nessa etapa é: R U R’ U R U’ U’ R’.</p>
+								<h5>Dentre os casos que podem aparecer:</h5>
+								<ul>
+									<li>Quando há duas arestas alinhadas, e elas estiverem em faces opostas do cubo, basta executar o algoritmo citado e recomeçar a etapa.</li>
+									<li>Quando há duas arestas alinhadas, e elas estiverem em faces adjacentes, é importante posicionar uma das faces para trás e a outra para a direita do cubo, em relação a visão de frente do cubo, e depois aplicar o algoritmo.</li>
+									<li>Quando há quatro arestas alinhadas, basta seguir para o próximo passo.</li>
+								</ul>
+								<img src="img/cubeTutorial/cube-yellow-cross-link.png" alt="almost-solved">
+								<hr>
+								<h5>6ª Passo - Resolver as pontas</h5>
+								<p>Agora só falta resolver os quatro cantos do cubo.</p>
+								<p>Primeiramente as peças precisam estar em seus lugares (nem que a orientação esteja incorreta). Nesse caso, a pessoa precisa procurar pelo menos uma peça que esteja no lugar correto, caso não haja, basta executar o algoritmo: U R U’ L U R’ U’ L’.</p>
+								<p>Agora será possível encontrar uma peça no lugar correto, mas possivelmente as outras não estarão no lugar, nesse caso, posiciona-se a peça correta, com a rotação do cubo inteiro, em relação a frente no canto superior direito, e executa o algoritmo citado.</p>
+								<p>Após esses movimentos é possível que o cubo tenha todos os cantos nos lugares corretos (mesmo com a orientação errada), caso não, basta repetir o algoritmo já dito e fazer outra verificação.</p>
+								<p>Se o cubo apresenta todos os cantos nos lugares corretos, apesar da orientação. Pode passar para o último passo.</p>
+								<img src="img/cubeTutorial/cube-almost-solved.png" alt="almost-there">
+								<hr>
+								<h5>7º Passo - Finalizar o cubo</h5>
+								<p>Para finalizar o cubo, vira-se a face de centro amarelo, para baixo. Após isso, a pessoa deve escolher um canto para resolver o quebra-cabeça, com isso, a pessoa deve rotacionar o cubo inteiro para que esse canto se encontre na parte inferior direita em relação a frente.</p>
+								<p>Com isso o algoritmo “R U R’ U’” deve ser executado até a face amarela da peça do canto do cubo, esteja virada para baixo.</p>
+								<p style="color: red">OBS: Não se preocupe o cubo desorganizar, faz parte do processo!</p>
+								<p>Após a face amarela da peça da ponta do cubo estar para baixo, a pessoa deve, somente, virar a parte de baixo do cubo para um outro campo não resolvido e repetir o algoritmo usando a lógica anterior. A pessoa deve fazer isso para todos os cantos com orientação incorreta.</p>
+								<p>Após isso o cubo deve estar quase montado necessitando de alguns poucos movimentos horizontais para se alinhar completamente, e ficar completamente resolvido.</p>
+								<img src="img/cubeTutorial/cube-solved.png" alt="cube solved">
+						  	</div>
+					  	</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card" style="border-width: 0px;">
+				<div class="card-header" id="headingTwo">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							<h4 class="accd">Notações</h4>
+						</button>
+					</h5>
+				</div>
+				<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+					<div class="card-body bg-gray">
+					<div class="container-fluid">
+					<div class="content">
+						<p>Para entender os algoritmos, é necessário primeiro entender a notação. Cada movimento é representado por um código, geralmente de uma letra, correspondente à camada que está a ser movida.</p>
+						<p>Todos esses movimentos são descritos no sentido horário. Para indicar um movimento no sentido anti-horário, ou seja, um movimento reverso, usamos um apóstrofo, como em R' e D'.</p>
+						<hr>
+						<main class="max">
+							<div class="container-fluid">
+								<div class="row h-100">
+									<div class="col-6 my-auto">
+										<ul style="font-size: 22px;">
+											<li>R (right, direita)</li>
+											<li>L (left, esquerda)</li>
+											<li>F (front, frente)</li>
+											<li>B (back, trás)</li>
+											<li>U (up, cima)</li>
+											<li>D (down, baixo)</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<img src="img/notacoes/notations.png" alt="img">
+									</div>
+								</div>
+							</div>
+						</main>
+						<hr>
+						<p>Movimentos largos (duas camadas ao mesmo tempo, uma de um lado e outra central), acrescentamos um "w" (do inglês "wide", que significa "largo) ou utilizamos letras minúsculas.</p>
+						<p>Temos também as camadas centrais, M (middle, meio), E (equatorial) e S (standing, "de pé"). Como elas são centrais, não se pode determinar o que seria sentido horário ou anti-horário. Portanto, a regra que define os movimentos normais e reversos para essas camadas é a camada a qual a letra que a representa é mais próxima no alfabeto.</p>
+						<p>Por exemplo: no alfabeto, M está mais próximo de L do que de R. Logo, o movimento M (normal) vai no mesmo sentido de L, enquanto M' (reverso) vai no sentido de L'. Da mesma forma, E acompanha D e E' acompanha D', enquanto S acompanha F e S', F'.</p>
+						<p>Temos também as rotações, indicadas pela letra do eixo a ser girado no sentido horário. Assim como nos movimentos normais, também usamos o apóstrofo para indicar uma rotação no sentido anti-horário.</p>
+						<hr>
+						<main class="max">
+							<div class="container-fluid">
+								<div class="row h-100">
+									<div class="col-6 my-auto">
+										<ul style="font-size: 22px;">
+											<li>x = eixo horizontal (abscissa)</li>
+											<li>y = eixo vertical (ordenada)</li>
+											<li>z = eixo frente-trás (cota)</li>
+										</ul>
+									</div>
+									<div class="col-6">
+										<img src="img/notacoes/other-notations.png" style="width: 500px; height: 300px;" alt="img">
+									</div>
+								</div>
+							</div>
+						</main>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="card border-danger">
+				<div class="card-header" id="headingThree">
+					<h5 class="mb-0">
+						<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							<h4 class="accd">Algoritmos</h4>
+						</button>
+					</h5>
+				</div>
+				<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+					<div class="card-body bg-gray">
+					<div class="container-fluid">
+					<div class="content">
+						<h5>Método Iniciante</h5>
+						<br>
+						<ul>
+							<li>Algoritmo base: R U R' U'</li>
+							<li>Algoritmo base (Esquerdo): L' U' L U</li>
+							<li>Reverso: U R U' R'</li>
+							<li>Esquerdo reverso: U' L' U L</li>
+						</ul>
+						<br>
+						<ul>
+							<li>Algoritmo de inserção de aresta: R U R' U' y L' U' L</li>
+							<li>Algoritmo de inserção de aresta (Esquerdo): L' U' L U y' R U R'</li>
+						</ul>
+						<h6>Algoritmos de orientação das arestas (correção da cruz):</h6>
+						<ul>
+							<li>Linha: F R U R' U' F'</li>
+							<li>Formato de "L": F U R U' R' F' (ou F (R U R' U')2 F')</li>
+							<li>Ponto: F R U R' U' S R U R' U' Fw'</li>
+						</ul>
+						<br>
+						<ul>
+							<li>Algoritmo de permutação das arestas: R U R' U R U2' R'</li>
+						</ul>
+						<h6>Algoritmos de permutação das pontas:</h6>
+						<ul>
+							<li>Frontal esquerda: R U' L' U R' U' L U'</li>
+							<li>Frontal direita: U R U' L' U R' U' L</li>
+						</ul>
+						<hr>
+						<h5>CFOP básico</h5>
+						<br>
+						<h6>OLL (etapa 2, orientação das pontas)</h6>
+						<ul>
+							<li>OLL 21:
+								<ul>
+									<li>R U R' U' R U' R' U R U2' R'</li>
+									<li>y/y' R U2 R' U' R U R' U' R U' R'</li>
+								</ul>
+							</li>
+							<li>OLL 22:
+								<ul>
+									<li>R U2 R2 U' R2' U' R2 U2 R</li>
+								</ul>
+							</li>
+							<li>OLL 23:
+								<ul>
+									<li>R2' D' R U2 R' D R U2 R</li>
+									<li>y2 R2 D R' U2 R D' R' U2 R'</li>
+								</ul>
+							</li>
+							<li>OLL 24:
+								<ul>
+									<li>Rw U R' U' r' F R F'</li>
+								</ul>
+							</li>
+							<li>OLL 25:
+								<ul>
+									<li>x R' U R D' R' U' R D</li>
+									<li>x U R' U' L U R U' L'</li>
+								</ul>
+							</li>
+							<li>OLL 26:
+								<ul>
+									<li>L' U' L U' L' U2 L</li>
+									<li>y' R U2 R' U' R U' R'</li>
+								</ul>
+							</li>
+							<li>OLL 27:
+								<ul>
+									<li>R U R' U R U2' R'</li>
+								</ul>
+							</li>
+						</ul>
+						<hr>
+						<h6>PLL (etapa 1, permutação das pontas)adjacentes</h6>
+						<ul>
+							<li>R U R' F' R U R' U' R' F R2 U' R'</li>
+							<li>R U R' U' R' F R2 U' R' U' R U R' F'</li>
+						</ul>
+						<h6>Opostas:</h6>
+						<ul>
+							<li>F R U' R' U' R U R' F' R U R' U' R' F R F'</li>
+						</ul>
+						<hr>
+						<h6>PLL (etapa 2, orientação das arestas)</h6>
+						<ul>
+							<li>Permutação H:
+								<ul>
+									<li>M2' U' M2' U2' M2' U' M2'</li>
+									<li>R2' U2' R2 U2' R2' U' R2 U2' R2' U2' R2</li>
+								</ul>
+							</li>
+							<li>Permutação Z:
+								<ul>
+									<li>M' U' M2' U' M2' U' M' U2' M2'</li>
+								</ul>
+							</li>
+							<li>Permutação Ua:
+								<ul>
+									<li>R U' R U R U R U' R' U' R2'</li>
+									<li>M2' U M U2' M' U' M2'</li>
+								</ul>
+							</li>
+							<li>Permutação Ub:
+								<ul>
+									<li>L' U L' U' L' U' L' U L U L2</li>
+									<li>M2' U' M U2' M' U M2'</li>
+								</ul>
+							</li>
+						</ul>
+					</div>
+					</div>
+					</div>
+				</div>
+			</div>
+
+
+		</div>
+	</section>
+
+	<!-- RODAPÉ -->
+	<footer>
+		<div>© 2021 Todos os direitos reservados</div>
+	</footer>
+
+
+	
+	<!-- JavaScript opcional -->
+	<!-- jQuery primeiro, então Popper.js, então Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 12px;
+    margin-top: auto;
+    margin-bottom: auto;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+}
+
+.justificado{
+    justify-content: space-between;
+}
+
+.max{
+    max-width: 80%;
+    margin: 50px auto;
+}
+
+.bg-nav{
+    background: linear-gradient(55deg, tomato, blue);
+}
+.bg-gray{
+    background-color: rgba(0,0,0,.03);
+}
+.accd{
+    color: black;
+    text-decoration: underline black;
+}
